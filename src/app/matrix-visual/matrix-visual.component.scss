@@ -1,0 +1,17 @@
+table {
+  width: 80vh;
+  height: 80vh;
+}
+
+table,
+th,
+td {
+  text-align: center;
+  table-layout: fixed;
+}
+td {
+  overflow: hidden;
+  font-size: 3em;
+  font-family: sans-serif;
+  background-color: #ffffff;
+}

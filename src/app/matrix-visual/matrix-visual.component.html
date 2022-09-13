@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <table>
+    <tr *ngFor="let matrixRow of matrix; index as y">
+      <td
+        *ngFor="let num of matrixRow; index as x"
+        [ngStyle]="{
+          backgroundColor: cellColors[y][x],
+          color: cellColors[y][x] == '' ? 'black' : 'white'
+        }"
+      >
+        {{ num }}
+      </td>
+    </tr>
+  </table>
+</div>
